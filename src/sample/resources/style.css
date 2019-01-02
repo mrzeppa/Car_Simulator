@@ -1,0 +1,42 @@
+@font-face{
+    src: url("DSEG14Classic-Bold.ttf");
+}
+
+#speedLabel, #roundsLabel, #gearLabel{
+    -fx-font-family: "DSEG14 Classic";
+    -fx-font-size: 20px;
+}
+
+.label{
+    -fx-background-color: black;
+}
+
+#container{
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: black;
+    -fx-background-image: url(interior2.jpg);
+
+}
+
+.button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-outer-border: 1px;
+    -fx-border: white 1px solid;
+}
+
+#closeButton:hover {
+    -fx-background-color: red;
+    -fx-text-fill: black;
+}
+
+#functionButton1:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#functionButton2:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
