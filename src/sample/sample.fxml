@@ -32,7 +32,7 @@
         <Label fx:id="speedLabel" prefHeight="55.0" prefWidth="218.0" text="0 KM/H" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
         <Label fx:id="statusLabel" prefHeight="50.0" prefWidth="208.0" text="Silnik wyłączony" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <Label fx:id="gearLabel" prefHeight="50.0" prefWidth="33.0" text="N" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-        <Label fx:id="roundsLabel" prefHeight="55.0" prefWidth="105.0" text="0 RPM" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label fx:id="roundsLabel" prefHeight="55.0" prefWidth="124.0" text="0 RPM" GridPane.columnIndex="2" GridPane.rowIndex="3" />
         <Button fx:id="functionButton1" layoutX="610.0" layoutY="10.0" onAction="#maximizeButton" prefHeight="25.0" prefWidth="102.0" text="Maksymalizuj" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
         <Button fx:id="closeButton" layoutX="677.0" layoutY="10.0" onAction="#closeButton" prefHeight="25.0" prefWidth="102.0" text="Zamknij" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
       <Rectangle fx:id="clutchGauge" arcHeight="5.0" arcWidth="5.0" fill="#6b6b6b" height="87.0" stroke="BLACK" strokeType="INSIDE" width="102.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />

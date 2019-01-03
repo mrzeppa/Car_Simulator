@@ -54,7 +54,7 @@ public class Controller {
                             for (Double i = car.getRounds(); i < 1132; i = i + 3){
                                 Platform.runLater(() -> {
                                     car.setRounds(car.getRounds() + 3);
-                                    roundsLabel.setText(Double.toString(car.getRounds()) + " RPM");
+                                    roundsLabel.setText(((int)car.getRounds()) + " RPM");
                                 });
                                 Thread.sleep(1);
                             }
@@ -71,6 +71,7 @@ public class Controller {
                 roundsLabel.setStyle("-fx-text-fill: #90ee90;");
                 gearLabel.setStyle("-fx-text-fill: #90ee90;");
                 speedLabel.setStyle("-fx-text-fill: #90ee90;");
+                statusLabel.setStyle("-fx-text-fill: #90ee90;");
 
 
             }
@@ -81,6 +82,8 @@ public class Controller {
 
                 car.setIsStarted(false);
                 statusLabel.setText("Silnik wyłączony");
+                statusLabel.setStyle("");
+
                 if (event.getCode() == KeyCode.F2) {
                     Task task = new Task<Void>() {
                         @Override
@@ -88,7 +91,7 @@ public class Controller {
                             for (Double i = car.getRounds(); i > 0; i = i - 3){
                                 Platform.runLater(() -> {
                                     car.setRounds(car.getRounds() - 3);
-                                    roundsLabel.setText(Double.toString(car.getRounds()) + " RPM");
+                                    roundsLabel.setText(Double.toString((int)car.getRounds()) + " RPM");
                                 });
                                 Thread.sleep(1);
                             }
